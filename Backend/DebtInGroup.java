@@ -1,6 +1,6 @@
 import java.util.List;
 
-//Ahmed//
+//Ahmed// Ayush owes Ahmed $10, Ahmed owes Veer $10, so Ayush directly pays Veer $10 to clear Ahmed debt
 
 public class Debt {
     int debtID;
