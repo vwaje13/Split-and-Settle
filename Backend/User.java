@@ -5,6 +5,8 @@ public class User {
     String phoneNumber;
     String password;
 
+    //Dat//
+
     void login(String attemptEmail, String attemptPassword){
 
     }
