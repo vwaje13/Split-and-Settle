@@ -147,7 +147,7 @@ public class Settings{
                 }
             }
         } else{
-            System.out.println("Account still has an outsatanding balance!");
+            System.out.println("Account still has an outstanding balance!");
         }
     }
 }
