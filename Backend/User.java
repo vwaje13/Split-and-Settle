@@ -65,4 +65,8 @@ public class User {
         //No matching email was found for any user.
         System.out.println(resetEmail + " not found.");
     }
+
+    public int getUserID() {
+        return userID;
+    }
 }
