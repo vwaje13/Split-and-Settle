@@ -20,9 +20,6 @@ public class Settlement{
     }
 
     public void settleTransaction(int transactionID){
-        // Assuming you have a mechanism to mark transactions as settled,
-        // you can implement it here. For simplicity, let's just print
-        // the settlement details.
 
         System.out.println("Transaction ID: " + transactionID);
         System.out.println("Expense ID: " + expense.expenseID);
@@ -31,8 +28,7 @@ public class Settlement{
         System.out.println("Payer: " + payer.getName());
         System.out.println("Receiver: " + receiver.getName());
 
-        // Here you might update the expense status to reflect that it has been settled.
-        // For example, you might set a flag in the Expense object indicating that it has been settled.
+
         settleStatus = true;
 
         System.out.println("Transaction settled successfully.");
