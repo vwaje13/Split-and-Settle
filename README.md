@@ -1,4 +1,4 @@
-# CS3354-SplitWise
+# CS3354-Split and Settle
 4 classes -> Group, User, Settelement, Expense
 2 People / Class
 
