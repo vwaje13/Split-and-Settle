@@ -51,7 +51,7 @@ public class User {
         System.out.println("New account has been created for " + pEmail);
     }
 
-    void resetPassword(String attemptName, String attemptEmail, String attemptPhoneNumber){
+    void deleteAccount(String attemptName, String attemptEmail, String attemptPhoneNumber){
         //Iterate through the users list.
         for (User user: users) {
             //Valid user ID
