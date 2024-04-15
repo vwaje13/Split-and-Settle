@@ -51,6 +51,37 @@ public class User {
         System.out.println("New account has been created for " + pEmail);
     }
 
+    void resetPassword(String attemptName, String attemptEmail, String attemptPhoneNumber){
+        //Iterate through the users list.
+        for (User user: users) {
+            //Valid user ID
+            if (user.name.equals(attemptName)) {
+                //valid email
+                if (user.email.equals(attemptEmail)) {
+                   //valid phone number
+                   if (user.phoneNumber.equals(attemptPhoneNumber)) {
+                      //Test case 1 valid input
+                      System.out.println("Further instructions to delete account sent to email address.");
+                      return;
+                   }
+                   else {
+                      //Test case 4 invalid phone number
+                      System.out.println("Invalid phone number");
+                      return;
+                   }
+                }
+                else {
+                 //Test case 3 invalid email address
+                 System.out.println("Invalid email address");
+                 return;
+                }
+             
+            }
+        }
+        //No matching user was found, Test case 2 user ID invalid
+        System.out.println("user ID was not found");
+    }
+
     //If the user email exists, then send instructions to reset password to the email. If user does not exist, then output error.
     void resetPassword(String resetEmail){
         //Iterate through the users list.
