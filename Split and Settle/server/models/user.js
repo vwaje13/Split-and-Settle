@@ -29,7 +29,7 @@ const userSchema = new mongoose.Schema({
       },
       message: "Passwords must include a capital letter, number, and special character and be 8 characters long",
     },
-    required: true,
+    //required: true,
   },
   creationDatetime: {
     type: Date,
