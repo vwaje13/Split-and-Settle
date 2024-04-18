@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.group-members-container {
+  width: 32em; /* Slightly wider for more content space */
+  height: 37em; /* Increased height for additional content */
+  box-shadow: 0 4px 10px rgba(50, 50, 93, 0.2); /* Subtler shadow effect */
+  border-radius: 10px; /* More rounded corners for a smoother look */
+  background: linear-gradient(to top, #e3f2fd 70%, #ffffff 30%); /* Adjusted gradient for a fresher look */
+  display: grid;
+  grid-template-rows: [switch] 50px [title] 50px [msg] 65px [content] auto;
+}
+
+.toggle-header {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* Increased font size for better readability */
+  font-weight: 700; /* Bold for emphasis */
+  align-self: end;
+  text-align: center;
+}
+
+.info-div:hover .info-hover {
+  opacity: 1; /* Ensures full visibility on hover */
+  z-index: 1;
+}
+
+.info-div .info-hover:hover {
+  opacity: 0; /* Hides on hover for interactive effect */
+  z-index: -1;
+}
+
+.info-hover {
+  z-index: -1;
+  cursor: pointer; /* Indicates interactivity */
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 2px 5px rgba(50, 50, 93, 0.25); /* Soft shadow for depth */
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: block; /* Changed from auto for consistency */
+  background-color: #ffffff;
+  height: 12em;
+  width: 27em;
+  position: relative;
+  top: -16.5em;
+  left: -21.5em;
+  border-radius: 8px; /* Rounded edges for modern look */
+  text-align: center;
+  padding: 1em; /* Unified padding for simplicity */
+  font-size: 15px; /* Larger text for easier reading */
+}
+
+.info-div {
+  grid-column-start: 1;
+  cursor: pointer;
+  background-color: #f0f0f0; /* Lighter grey for a softer look */
+  font-size: 16px; /* Larger font size for visibility */
+  border-radius: 50%;
+  margin: 5px; /* Adjusted margin for better positioning */
+  height: 2em; /* Increased for better interactivity */
+  width: 2em;
+  text-align: center;
+  padding: 0.3em; /* Adjusted padding for better touch */
+  font-family: "Roboto", sans-serif; /* Unified font family */
+  color: #39444e; /* Consistent text color */
+}
+
+.toggle-container {
+  width: 7em; /* Slightly wider for better layout */
+  flex-flow: wrap;
+  display: flex;
+  padding: 0.8em; /* Increased padding for more space */
+  justify-self: flex-end;
+  justify-content: center;
+}
+
+.split-toggle {
+  display: flex;
+  transition: opacity 0.5s ease;
+  margin: 0 auto;
+  width: 5em; /* Slightly larger for usability */
+  height: 2em; /* Taller for better touch interaction */
+  background-color: #e0e0e0; /* Softer grey */
+  border-radius: 12px; /* More pronounced rounding */
+  align-items: center;
+}
+
+.circle-toggle {
+  transition: all 0.3s ease;
+  margin-left: 0.3em;
+  background-color: #cc444b; /* A more vibrant red for visual interest */
+  width: 2.2em; /* Slightly larger for emphasis */
+  height: 1.6em; /* Proportionally increased */
+  border-radius: 12px; /* Smooth rounded edges */
+}
+
+.group-members-title {
+  margin: 0 auto; /* Centered margin for consistency */
+  font-family: "Roboto", sans-serif; /* Updated font for coherence */
+  color: #39444e;
+  align-self: center; /* Center alignment for visual balance */
+}
+
+.group-members-msg {
+  transition: all 1s ease;
+  margin: 0px auto 0px auto;
+  font-family: "Poppins", sans-serif;
+  color: #39444e;
+  font-size: 13px;
+  margin: 0 80px;
+  text-align: center;
+  hyphens: auto;
+  line-height: 16px;
+  opacity: 1;
+}
+
+.group-members-msg-fade {
+  opacity: 0;
+}

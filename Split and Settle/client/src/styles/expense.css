@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.expense {
+  transition: all 1s ease;
+  font-family: "Roboto", sans-serif; /* Consistent and modern font */
+  display: grid;
+  align-items: center;
+  grid-template-columns: [date] 10% [image] 10% [title] 30% [members] 40% [arrow] 9% [tooltip] 1%;
+  width: 90%;
+  height: 60px; /* Slightly taller for better item separation */
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Soft background for better readability */
+  border-radius: 8px; /* Rounded edges for a smoother look */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.expense-hover {
+  right: 22em;
+  top: 0; /* Adjusted to align properly */
+  display: flex;
+  cursor: pointer; /* Change to pointer to indicate interactivity */
+  font-weight: 700; /* Bolder for emphasis */
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 2px 5px rgba(50, 50, 93, 0.2); /* Softer shadow */
+  transition: all 0.3s ease;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px; /* More pronounced rounding */
+  text-align: center;
+  padding: 5px 10px; /* More padding for a better visual */
+  font-size: 14px; /* Slightly larger font size */
+  position: relative;
+}
+
+.expand-expense {
+  overflow: hidden;
+  border-bottom: 2px solid #ccc; /* Thicker border for distinction */
+  transition: all 0.4s ease;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.e-title {
+  font-size: 15px; /* Increased font size for readability */
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to two lines */
+  display: -webkit-box;
+  hyphens: auto;
+  line-height: 18px; /* Adjusted line height for spacing */
+}
+
+.e-pic {
+  background-color: #e0e0e0; /* Lighter grey for softer appearance */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular images */
+}
+
+.e-member-price {
+  align-self: flex-start;
+  grid-template-columns: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: [price] auto [members] auto;
+}
+
+.e-members,
+.e-price {
+  justify-self: center;
+}
+
+.e-arrow {
+  padding: 5px; /* Unified padding */
+  height: 25px; /* Larger for visibility */
+  width: 20px; /* Proportionate increase */
+  justify-content: center;
+}
+
+.e-members {
+  max-width: 90%;
+  display: flex;
+  font-size: 14px; /* Increased font size */
+  background-color: #4caf50; /* Greener shade for freshness */
+  border-radius: 10px; /* More rounded edges */
+  padding: 3px 10px; /* More padding for comfort */
+}
+
+.e-date {
+  font-size: medium; /* Larger font for emphasis */
+  justify-self: center;
+  color: #666; /* Darker color for contrast */
+}

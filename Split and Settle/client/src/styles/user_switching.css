@@ -1,0 +1,26 @@
+.user-switching-container {
+  align-self: center;
+  margin-right: 10%;  /* Adjusted for a more balanced spacing */
+  background-color: #fafafa;  /* Light background for the container */
+  padding: 10px;  /* Added padding for better spacing */
+  border-radius: 8px;  /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+}
+
+select {
+  border: 2px solid #4caf50;  /* Bright green border */
+  border-radius: 20px;  /* More pronounced rounded corners */
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;  /* Ensured font family is globally applicable */
+  padding: 8px 12px;  /* Increased padding for better touch interaction */
+  height: 40px;  /* Slightly increased height for aesthetic balance */
+  font-weight: bold;
+  outline: none;  /* No outline on focus to maintain style */
+  color: #555;  /* Darker font color for better readability */
+  background-color: #fff;  /* White background to contrast with the border */
+  transition: border-color 0.3s;  /* Smooth transition for hover effects */
+}
+
+select:hover {
+  border-color: #388e3c;  /* Darker green when hovered for interactive feedback */
+}

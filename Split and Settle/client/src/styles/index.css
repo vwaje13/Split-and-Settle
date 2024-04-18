@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  background-color: #e8eaf6;  /* Light indigo background */
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;  /* Changed to Lato, a modern and readable font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;  /* Darker text for better readability */
+}
+
+code {
+  font-family: 'Fira Code', monospace;  /* Using Fira Code for a better coding experience */
+  color: #d32f2f;  /* Red color for code elements, good for contrast */
+}

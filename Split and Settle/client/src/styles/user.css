@@ -1,0 +1,77 @@
+.users-container {
+  overflow: overlay;
+}
+
+.users-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.users-container::-webkit-scrollbar-thumb {
+  background-color: #9e9e9e;  /* Updated to a medium grey for better visibility */
+  border-radius: 6px;  /* More pronounced rounding for a smoother scroll appearance */
+}
+
+.user-balance-container {
+  justify-self: start;
+}
+
+.settle-container {
+  flex-flow: row nowrap;
+  transition: all 1s ease;
+  gap: 10px;  /* Increased gap for better spacing between elements */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);  /* Lighter and thicker border for subtlety */
+  margin: 0 auto;
+}
+
+.settle-container input {
+  height: auto;
+  width: 100px;  /* Slightly wider input for better usability */
+  flex-grow: 0;
+  padding: 4px 8px;  /* Added padding for better text input experience */
+}
+
+.user-container {
+  transition: all 1s ease;
+  font-family: "Poppins", sans-serif;  /* Ensured global font-family usage */
+  display: grid;
+  align-items: center;
+  grid-template-columns: [image] 50px [member] auto [balance] 100px;  /* Adjusted balance column width */
+  width: 90%;
+  height: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);  /* Consistency with settle-container */
+  margin: 0 auto;
+  font-size: 18px;  /* Slightly reduced font size for better text alignment */
+}
+
+.user-pic {
+  background-color: #eceff1;  /* Light blue-grey background for a softer look */
+  width: 40px;  /* Adjusted size for balance */
+  height: 40px;
+  border-radius: 20px;  /* Circular profile pictures */
+  align-self: center;
+  justify-self: center;
+}
+
+.user-balance {
+  text-align: center;
+  font-size: 18px;  /* Consistent font size across elements */
+  border-radius: 5px;
+  padding: 2px 5px;  /* Padding for text clarity */
+}
+
+.user-balance-green {
+  background-color: rgba(76, 175, 80, 0.7);  /* Softer green with increased opacity for better visibility */
+}
+
+.user-balance-red {
+  background-color: rgba(244, 67, 54, 0.7);  /* Softer red with increased opacity for better visibility */
+}
+
+.user-username {
+  padding: 0px 0px 0px 10px;
+}
