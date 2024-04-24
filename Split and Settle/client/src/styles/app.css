@@ -54,13 +54,22 @@
   color: #424242; /* Darker grey for contrast */
 }
 
+
+
 .center-pic {
-  display: block;
-  margin: 0 auto;
-  width: 210px; /* Slightly larger for emphasis */
-  height: 210px; /* Maintain aspect ratio */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  position: absolute; /* Allows free positioning */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Helps in centering */
+  width: 200px; /* Slightly larger for emphasis */
+  height: 200px; /* Maintain aspect ratio */
   padding: 12px; /* Slightly more padding */
-  margin-left: -110px; /* Adjust for the increased size */
   border-radius: 100px; /* Rounded edges for a smooth look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
