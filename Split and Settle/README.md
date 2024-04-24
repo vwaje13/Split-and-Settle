@@ -9,13 +9,13 @@
 ### Running the Server
 
 1. Open a terminal.
-2. Navigate to the server directory: `cd "Split and Settle"/server`
+2. Navigate to the server directory: `cd server`
 3. Install dependencies: `npm install`
 4. Run the server: `node app`
 
 ### Running the Client
 
 1. Open new terminal window which is separate from the previous one.
-2. Navigate to the server directory: `cd "Split and Settle"/client`
+2. Navigate to the server directory: `cd client`
 3. Install dependencies: `npm install`
 4. Run the client: `npm start` and the app should start
