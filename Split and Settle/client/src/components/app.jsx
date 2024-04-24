@@ -216,7 +216,7 @@ function App() {
       <div className="header-container">
         
         <h1 className="title">Split and Settle</h1>
-        <img src={pic} alt="Pic" className="top-pic" />
+        <img src={pic} alt="Pic" className="center-pic" />
         <UserSwitching group={group} onClick={changeActiveUser}></UserSwitching>
       </div>
       <div className="main-content-container">
