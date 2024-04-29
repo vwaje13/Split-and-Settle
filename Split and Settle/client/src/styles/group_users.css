@@ -80,7 +80,7 @@
   margin: 0 auto;
   width: 5em; /* Slightly larger for usability */
   height: 2em; /* Taller for better touch interaction */
-  background-color: #e0e0e0; /* Softer grey */
+  background-color: #ffffff; /* Softer grey */
   border-radius: 12px; /* More pronounced rounding */
   align-items: center;
 }
