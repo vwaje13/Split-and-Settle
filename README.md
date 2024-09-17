@@ -4,7 +4,7 @@
 
 ### Setting up the MongoDB Database
 
-1. Insert your MongoDB link in line 21 of 'server/app.js' for the devUrl. Currently, it is set to Ayush Sheth's MongoDB Cluster0
+1. Insert your MongoDB link in line 21 of 'server/app.js' for the devUrl. Currently, it is set to Ayush Sheth's MongoDB Cluster0 (inactive)
 
 ### Running the Server
 
